@@ -1,10 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Stylish&display=swap');
 
 :root {
-  --primaryColor: #5fb7ea;
-  --primaryRGBA: rgba(0,0,0,0.3);
+    --primaryColor: #5fb7ea;
+    --primaryRGBA: rgba(0,0,0,0.3);
+    --mainGray: #fafafa;
+    --darkGray: #5f5e5e;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainTransition: all 0.3s ease-in-out;
+    --mainSpacing: 0.3rem;
+}
+
+.text-title {
+    font-family: 'Stylish', 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
+}
+
+.text-main {
+    color: var(--primaryColor);
 }
 
 body {
-  font-family: 'Montserrat', 'stylish', serif !important;
+    font-family: 'Montserrat', 'stylish', serif !important;
+    background: var(--mainGray) !important;
+    color: var(--mainBlack);
 }
