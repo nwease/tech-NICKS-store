@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Products = () => {
+const Cart = () => {
     return (
         <React.Fragment>
             <h1>
-                PRODUCTS PAGE
+                CART PAGE
             </h1>
         </React.Fragment>
     );
 };
 
-export default Products;
+export default Cart;
