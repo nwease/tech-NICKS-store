@@ -6,7 +6,6 @@ const Home = () => {
         <React.Fragment>
             <ProductConsumer>
                 {value => {
-                    console.log(value);
                     return <h1>HELLO</h1>
                 }}
             </ProductConsumer>
