@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a8f336d-954c-4233-a286-abd7014ec58c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/context/linkData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,17 +22,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/context/context.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="252">
+              <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/NavBar.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/SideBar.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+            <state relative-caret-position="336">
+              <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -40,8 +44,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/images/logo.svg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/context/linkData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -64,14 +72,15 @@
         <option value="$PROJECT_DIR$/src/components/Footer.jsx" />
         <option value="$PROJECT_DIR$/src/components/Navbar.jsx" />
         <option value="$PROJECT_DIR$/src/components/Sidebar.jsx" />
-        <option value="$PROJECT_DIR$/src/components/SideBar.jsx" />
         <option value="$PROJECT_DIR$/src/components/SideCart.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/context/package.json" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/context/context.js" />
         <option value="$PROJECT_DIR$/src/pages/Home.jsx" />
         <option value="$PROJECT_DIR$/src/components/NavBar.jsx" />
+        <option value="$PROJECT_DIR$/src/context/linkData.js" />
+        <option value="$PROJECT_DIR$/src/context/context.js" />
+        <option value="$PROJECT_DIR$/src/components/SideBar.jsx" />
       </list>
     </option>
   </component>
@@ -103,7 +112,7 @@
               <item name="tech_nick_store" type="b2602c69:ProjectViewProjectNode" />
               <item name="tech_nick_store" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,7 +164,7 @@
       <workItem from="1558550748587" duration="855000" />
       <workItem from="1558552500372" duration="271000" />
       <workItem from="1558690759490" duration="4237000" />
-      <workItem from="1558944325829" duration="6436000" />
+      <workItem from="1558944325829" duration="9768000" />
     </task>
     <task id="LOCAL-00001" summary="Setup project files and began router setup.">
       <created>1558693558693</created>
@@ -178,11 +187,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558947850040</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More Context API and setup of navbar.">
+      <created>1558951992299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558951992307</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15604000" />
+    <option name="totallyTimeSpent" value="18936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1206" y="23" width="714" height="1057" extended-state="0" />
@@ -221,7 +237,8 @@
     <MESSAGE value="Setup project files and began router setup." />
     <MESSAGE value="Finished react router setup." />
     <MESSAGE value="Started setup of Context API." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started setup of Context API." />
+    <MESSAGE value="More Context API and setup of navbar." />
+    <option name="LAST_COMMIT_MESSAGE" value="More Context API and setup of navbar." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.css">
@@ -294,13 +311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SideBar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -345,20 +355,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/context/context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavBar.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+        <state relative-caret-position="520">
+          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/context/linkData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/context/context.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SideBar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
