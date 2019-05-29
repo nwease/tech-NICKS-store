@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <React.Fragment>
             <Hero title='Technology for everyday' max='true'>
-                <Link to='/products'>
+                <Link className='main-link' to='/products' style={{margin: '2rem'}}>
                     Our Products
                 </Link>
             </Hero>

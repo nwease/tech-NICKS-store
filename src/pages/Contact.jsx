@@ -1,11 +1,13 @@
 import React from 'react';
+import Hero from '../components/Hero';
+import contactImg from '../images/contactBcg.jpeg';
+import ContactPage from '../components/Contact/ContactPage';
 
 const Contact = () => {
     return (
         <React.Fragment>
-            <h1>
-                CONTACT PAGE
-            </h1>
+            <Hero img={contactImg} />
+            <ContactPage />
         </React.Fragment>
     );
 };
