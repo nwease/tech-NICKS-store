@@ -1,17 +1,19 @@
 import React from 'react';
+import Title from "../Title";
 
 const ContactPage = () => {
     return (
         <section className='py-5'>
             <div className='row'>
                 <div className='col-10 mx-auto col-md-6 my-3'>
-                    <form className='mt-5' action=''>
+                    <Title title='Contact Us' center />
+                    <form className='mt-5' action='https://formspree.io/nickwease@gmail.com' method='POST'>
                         <div className='form-group'>
                             <input
                                 type='text'
-                                name='firstName'
+                                name='name'
                                 className='form-control'
-                                placeholder='John Doe'
+                                placeholder='Name'
                             />
                         </div>
 
@@ -39,6 +41,14 @@ const ContactPage = () => {
                                 name='message'
                                 rows='10'
                                 placeholder='message'
+                            />
+                        </div>
+
+                        <div className='form-group mt-3'>
+                            <input
+                                type='submit'
+                                value='send'
+                                className='form-control bg-primary text-white'
                             />
                         </div>
                     </form>
