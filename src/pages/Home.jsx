@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
+import Services from '../components/Home/Services';
 
 const Home = () => {
     return (

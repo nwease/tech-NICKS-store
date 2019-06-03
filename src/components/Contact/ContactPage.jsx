@@ -22,7 +22,7 @@ const ContactPage = () => {
                                 type='email'
                                 name='email'
                                 className='form-control'
-                                placeholder='email'
+                                placeholder='Email'
                             />
                         </div>
 
@@ -31,7 +31,7 @@ const ContactPage = () => {
                                 type='text'
                                 name='subject'
                                 className='form-control'
-                                placeholder='subject'
+                                placeholder='Subject'
                             />
                         </div>
 
@@ -40,14 +40,14 @@ const ContactPage = () => {
                                 className='form-control'
                                 name='message'
                                 rows='10'
-                                placeholder='message'
+                                placeholder='Message'
                             />
                         </div>
 
                         <div className='form-group mt-3'>
                             <input
                                 type='submit'
-                                value='send'
+                                value='SEND'
                                 className='form-control bg-primary text-white'
                             />
                         </div>
