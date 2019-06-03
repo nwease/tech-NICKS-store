@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { linkData } from './linkData';
+import {linkData} from './linkData';
 import {socialData} from './socialData';
+import {items} from './productData';
 
 const ProductContext = React.createContext();
 
@@ -9,10 +10,79 @@ class ProductProvider extends Component {
     state = {
         sideBarOpen: false,
         cartOpen: false,
-        cartItems: 0,
         links: linkData,
         socialLinks: socialData,
-        cart: []
+        cart: [],
+        cartItems: 0,
+        cartSubTotal: 0,
+        cartTax: 0,
+        cartTotal: 0,
+        storeProducts: [],
+        filteredProducts: [],
+        featuredProducts: [],
+        singleProduct: {},
+        loading: false
+    };
+
+    componentDidMount = () => {
+        // FROM CONTENTFUL ITEMS
+
+        this.setProducts(items);
+    };
+
+    // SET PRODUCTS
+    setProducts = (products) => {
+        let storeProducts = products.map(item => {
+            const {id} = item.sys;
+            const image = item.fields.image.fields.file.url;
+            return {id, ...item.fields, image};
+        });
+    // FEATURED PRODUCTS
+        let featuredProducts = storeProducts.filter(item => item.featured === true)
+
+        this.setState({
+            storeProducts,
+            filteredProducts: storeProducts,
+            featuredProducts,
+            cart: this.getStorageCart(),
+            singleProduct: this.getStorageProduct(),
+            loading: false
+        })
+    };
+
+    // GET CART FROM LOCAL STORAGE
+    getStorageCart = () => {
+        return [];
+    };
+
+    // GET PRODUCT FROM LOCAL STORAGE
+    getStorageProduct = () => {
+        return [];
+    };
+
+    // GET TOTALS
+    getTotals = () => {
+
+    };
+
+    // ADD TOTALS
+    addTotals = () => {
+
+    };
+
+    // SYNC STORAGE
+    syncStorage = () => {
+
+    };
+
+    // ADD TO CART
+    addToCart = (id) => {
+        console.log(`add to cart ${id}`);
+    };
+
+    // SET SINGLE PRODUCT
+    setSingleProduct = (id) => {
+        console.log(`set single product ${id}`);
     };
 
     // SIDEBAR
@@ -50,7 +120,9 @@ class ProductProvider extends Component {
                 handleSideBar: this.handleSideBar,
                 handleCart: this.handleCart,
                 closeCart: this.closeCart,
-                openCart: this.openCart
+                openCart: this.openCart,
+                addToCart: this.addToCart,
+                setSingleProduct: this.setSingleProduct
             }}>
                 {this.props.children}
             </ProductContext.Provider>

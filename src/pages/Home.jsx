@@ -7,7 +7,7 @@ import Featured from '../components/Home/Featured';
 const Home = () => {
     return (
         <React.Fragment>
-            <Hero title='Technology for everyday' max='true'>
+            <Hero title='Technology for Everyday' max='true'>
                 <Link className='main-link' to='/products' style={{margin: '2rem'}}>
                     Our Products
                 </Link>
