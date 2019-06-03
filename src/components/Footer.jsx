@@ -12,7 +12,7 @@ const Footer = () => {
                             <div className='row'>
                                 <div className='col-md-6'>
                                     <p className='text-capitalize'>
-                                        copyright &copy; Tech NICKS Store
+                                        copyright &copy; Tech NICKS Store <space/>
                                         {new Date().getFullYear()}. All Rights Reserved.
                                     </p>
                                 </div>

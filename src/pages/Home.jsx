@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
 import Services from '../components/Home/Services';
+import Featured from '../components/Home/Featured';
 
 const Home = () => {
     return (
@@ -11,6 +12,14 @@ const Home = () => {
                     Our Products
                 </Link>
             </Hero>
+
+            <Services>
+
+            </Services>
+
+            <Featured>
+
+            </Featured>
         </React.Fragment>
     );
 };
