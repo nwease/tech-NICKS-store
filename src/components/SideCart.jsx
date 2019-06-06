@@ -1,16 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ProductConsumer } from '../context';
+import { Link } from 'react-router-dom';
 
 const SideCart = () => {
     return (
         <ProductConsumer>
             {value => {
-                const { cartOpen, closeCart, cart } = value;
+                const { cartOpen, closeCart, cart, cartTotal } = value;
 
                 return (
                     <CartWrapper show={cartOpen} onClick={closeCart}>
-                        <p>Cart Items</p>
+                        <ul>
+                            {cart.map(item => {
+                                return (
+                                    <li className='cart-item mb-4' key={item.id}>
+                                        <img src={`../${item.image}`} alt='cart item' width='35'/>
+
+                                        <div className='mt-3'>
+                                            <h6 className='text-uppercase'>
+                                                {item.title}
+                                            </h6>
+
+                                            <h6 className='text-title text-capitalize'>
+                                                amount: {item.count}
+                                            </h6>
+                                        </div>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+
+                        <h4 className='text-capitalize text-main'>
+                            Cart Total: ${cartTotal}
+                        </h4>
+
+                        <div className='text-center my-5'>
+                            <Link className='main-link' to='/cart'>
+                                Cart
+                            </Link>
+                        </div>
                     </CartWrapper>
                 )
             }}
@@ -32,6 +61,17 @@ const CartWrapper = styled.div `
   
   @media(min-width: 576px) {
     width: 20rem;
+  }
+  
+  overflow: scroll;
+  padding: 2rem;
+  
+  ul {
+    padding: 0 !important;
+  }
+  
+  .cart-item {
+    list-style-type: none;
   }
 `;
 

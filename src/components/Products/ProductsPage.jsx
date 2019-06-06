@@ -1,6 +1,5 @@
 import React from 'react';
 import { ProductConsumer } from '../../context';
-import styled from 'styled-components';
 import Title from '../Title';
 import Product from '../Product';
 
@@ -29,9 +28,5 @@ const ProductsPage = () => {
         </ProductConsumer>
     );
 };
-
-const ProductsPageWrapper = styled.div `
-
-`;
 
 export default ProductsPage;
