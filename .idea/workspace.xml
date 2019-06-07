@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a8f336d-954c-4233-a286-abd7014ec58c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CartSection/CartItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartSection/CartList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartSection/CartPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartSection/CartPillar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartSection/CartTotal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CartSection/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartSection/CartList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartSection/CartList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartSection/CartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartSection/CartPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,23 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CartSection/CartPage.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/Cart.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="231">
+              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -94,8 +77,8 @@
         <option value="$PROJECT_DIR$/src/components/Cart/CartPage.jsx" />
         <option value="$PROJECT_DIR$/src/components/Cart/CartList.jsx" />
         <option value="$PROJECT_DIR$/src/components/CartSection/CartList.jsx" />
-        <option value="$PROJECT_DIR$/src/components/CartSection/CartPage.jsx" />
         <option value="$PROJECT_DIR$/src/pages/Cart.jsx" />
+        <option value="$PROJECT_DIR$/src/components/CartSection/CartPage.jsx" />
       </list>
     </option>
   </component>
@@ -111,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,7 +130,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,7 +184,8 @@
       <workItem from="1559723847668" duration="2892000" />
       <workItem from="1559745972467" duration="5123000" />
       <workItem from="1559823957680" duration="1811000" />
-      <workItem from="1559829613738" duration="7549000" />
+      <workItem from="1559829613738" duration="8207000" />
+      <workItem from="1559904511476" duration="801000" />
     </task>
     <task id="LOCAL-00001" summary="Setup project files and began router setup.">
       <created>1558693558693</created>
@@ -329,17 +313,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559834566221</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Worked on setting up Cart Section.">
+      <created>1559903069985</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1559903069987</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75164000" />
+    <option name="totallyTimeSpent" value="76623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1206" y="23" width="714" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25744048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Storybook" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -354,7 +345,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32982087" />
       <window_info anchor="bottom" id="GraphQL" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48809522" visible="true" weight="0.32982087" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48809522" visible="true" weight="0.32982087" />
       <window_info anchor="bottom" id="GitLabIntegration" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5119048" side_tool="true" weight="0.32982087" />
       <window_info anchor="bottom" id="Quokka" order="13" />
@@ -387,7 +378,8 @@
     <MESSAGE value="Set up products and products page." />
     <MESSAGE value="Did a whole lot of crap with context much of which I was blown away. Such is the way it is." />
     <MESSAGE value="Setup sidecart, sngle products, etc... So many things so little time LOL." />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup sidecart, sngle products, etc... So many things so little time LOL." />
+    <MESSAGE value="Worked on setting up Cart Section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on setting up Cart Section." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -690,20 +682,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CartSection/CartPage.jsx">
+    <entry file="file://$PROJECT_DIR$/src/pages/Cart.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="168">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Cart.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/CartSection/CartPage.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="231">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
