@@ -24,9 +24,8 @@ class ProductProvider extends Component {
         loading: true
     };
 
+    // FROM CONTENTFUL ITEMS
     componentDidMount = () => {
-        // FROM CONTENTFUL ITEMS
-
         this.setProducts(items);
     };
 
@@ -37,7 +36,8 @@ class ProductProvider extends Component {
             const image = item.fields.image.fields.file.url;
             return {id, ...item.fields, image};
         });
-    // FEATURED PRODUCTS
+
+        // FEATURED PRODUCTS
         let featuredProducts = storeProducts.filter(item => item.featured === true)
 
         this.setState({
@@ -178,6 +178,26 @@ class ProductProvider extends Component {
         })
     };
 
+    // INCREMENT
+    increment = (id) => {
+        console.log(id);
+    };
+
+    // DECREMENT
+    decrement = (id) => {
+        console.log(id);
+    };
+
+    // REMOVE ITEM
+    removeItem = (id) => {
+        console.log(id);
+    };
+
+    // CLEAR CART
+    clearCart = () => {
+        console.log('nice');
+    };
+
     render() {
         return (
             <ProductContext.Provider value={{
@@ -187,7 +207,11 @@ class ProductProvider extends Component {
                 closeCart: this.closeCart,
                 openCart: this.openCart,
                 addToCart: this.addToCart,
-                setSingleProduct: this.setSingleProduct
+                setSingleProduct: this.setSingleProduct,
+                increment: this.increment,
+                decrement: this.decrement,
+                removeItem: this.removeItem,
+                clearCart: this.clearCart
             }}>
                 {this.props.children}
             </ProductContext.Provider>
